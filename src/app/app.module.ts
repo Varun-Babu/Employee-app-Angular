@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 const myRoute : Routes=[
   {
     path:"",
@@ -24,7 +25,12 @@ const myRoute : Routes=[
   {
     path:"delete",
     component:DeleteEmployeeComponent
-  }
+  },
+  {
+    path:"edit",
+    component:EditEmployeeComponent
+  },
+  
   
 ]
 @NgModule({
@@ -33,7 +39,8 @@ const myRoute : Routes=[
     AdminLoginComponent,
     AddEmployeeComponent,
     SearchEmployeeComponent,
-    DeleteEmployeeComponent
+    DeleteEmployeeComponent,
+    EditEmployeeComponent
   ],
   imports: [
     BrowserModule,
