@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 const myRoute : Routes=[
   {
     path:"",
@@ -14,13 +15,19 @@ const myRoute : Routes=[
   {
     path:"add",
     component:AddEmployeeComponent
-  }
+  },
+  {
+    path:"search",
+    component:SearchEmployeeComponent
+  },
+  
 ]
 @NgModule({
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    SearchEmployeeComponent
   ],
   imports: [
     BrowserModule,
