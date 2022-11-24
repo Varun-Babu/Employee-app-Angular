@@ -10,6 +10,7 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { NavbarComponent } from './navbar/navbar.component';
 const myRoute : Routes=[
   {
     path:"",
@@ -46,7 +47,8 @@ const myRoute : Routes=[
     SearchEmployeeComponent,
     DeleteEmployeeComponent,
     EditEmployeeComponent,
-    ViewEmployeeComponent
+    ViewEmployeeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
