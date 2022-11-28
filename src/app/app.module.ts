@@ -11,6 +11,7 @@ import { DeleteEmployeeComponent } from './delete-employee/delete-employee.compo
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 const myRoute : Routes=[
   {
     path:"",
@@ -53,7 +54,8 @@ const myRoute : Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
