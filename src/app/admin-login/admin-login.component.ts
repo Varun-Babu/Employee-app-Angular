@@ -12,7 +12,15 @@ export class AdminLoginComponent {
   readValue = () =>
   {
     let data:any = {"Username":this.Username,"Password":this.Password}
-  }
+
+    if(this.Username=="admin" && this.Password == "123")
+    {
+      alert("valid")
+    }
+    else{
+      alert("invalid")
+    }
   
+  }
 
 }
